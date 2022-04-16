@@ -1,0 +1,36 @@
+#page_content {
+    grid-area: page_content;
+    padding: 5vh 0vh 10vh 7vh;
+    /* background-color: rgb(245, 248, 34); */
+    background-color: lightgrey;
+    display: grid; 
+	grid-column-gap: 5vh;
+    row-gap: 5vh;
+    grid-template: 
+        "glorad glorad" 38vh 
+        "demand demand" 38vh 
+        /* "rtable rtable" 22vh  */
+        / 70% 20%
+}
+
+#glorad {
+    grid-area: glorad;
+    background-color: white;
+    /* width: 100%; */
+    /* margin-top: 3vh; */
+    /* border-radius: 5px; */
+}
+
+#demand {
+    grid-area: demand;
+    background-color: lightpink;
+    /* margin-top: 3vh; */
+    /* border-radius: 5px; */
+}
+
+#rtable {
+    grid-area: rtable;
+    background-color: lightgreen;
+    /* margin-top: 3vh; */
+    /* border-radius: 5px; */
+}

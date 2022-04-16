@@ -1,0 +1,78 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+
+<section id="page_content"> 
+
+    <div id="map" aria-label="Map"></div>
+    
+    <form id="inputs" action="/results" method="post">
+        {% csrf_token %}
+
+        <p id="location_box">Select a location on the map. (Default location: Dublin)</p>
+        <div id="size" class="input_box">
+            <p>Size of installation (In Kilowatt Peak)</p>
+            <input aria-label="size-slider" style="display:inline;"type="range" min="0.25" max="6" value="0.25" class="slider" id="slider" name="size" step="0.25">
+            <p id="slider-output" style="display:inline; font-weight: normal;"></p>
+        </div>
+        
+        <div id="azimuth" class="input_box">
+            <fieldset>
+                <p>Direction</p>
+                <input type="radio" id="S" name="azimuth" value="S" checked>
+                <label for="S">South</label>
+
+                <input type="radio" id="SE/SW" name="azimuth" value="SE/SW">
+                <label for="SE/SW">SE/SW</label>
+
+                <input type="radio" id="E/W" name="azimuth" value="E/W">
+                <label for="E/W">East/West</label>
+
+                <input type="radio" id="NE/NW" name="azimuth" value="NE/NW">
+                <label for="NE/NW">NE/NW</label>
+
+                <input type="radio" id="N" name="azimuth" value="N">
+                <label for="N">North</label>
+            </fieldset>
+        </div>
+        
+        <div id="tilt" class="input_box">
+            <fieldset>
+            <p>Tilt</p>
+                <input type="radio" id="Horizontal" name="tilt" value="Horizontal" checked>
+                <label for="Horizontal">Horizontal</label>
+
+                <input type="radio" id="15" name="tilt" value="15">
+                <label for="15">15°</label>
+
+                <input type="radio" id="30" name="tilt" value="30">
+                <label for="30">30°</label>
+
+                <input type="radio" id="45" name="tilt" value="45">
+                <label for="45">45°</label>
+
+                <input type="radio" id="60" name="tilt" value="60">
+                <label for="60">60°</label>
+
+                <input type="radio" id="75" name="tilt" value="75">
+                <label for="75">75°</label>
+
+                <input type="radio" id="Vertical" name="tilt" value="Vertical">
+                <label for="Vertical">Vertical</label>
+            </fieldset>
+        </div>
+        
+        <button type="submit" aria-label="Submit" value="submit">Submit</button>
+        <input type="hidden" id="location_input" name="location_input"> 
+        <input type="hidden" id="location_name" name="location_name">
+    </form>
+    
+</section>
+
+<script id="my_script" src="{% static 'js/home.js' %}" type="text/javascript"></script>
+{% endblock %}

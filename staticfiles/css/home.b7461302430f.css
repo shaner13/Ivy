@@ -1,0 +1,90 @@
+#page_content {
+    grid-area: page_content;
+    padding: 5vh 0vh 10vh 7vh;
+    /* background-color: rgb(245, 248, 34); */
+    background-color: yellow;
+    display: grid; 
+	grid-column-gap: 5vh;
+    row-gap: 5vh;
+    grid-template: 
+        "location inputs" 80vh 
+        / 45% 45%
+}
+
+#location {
+    grid-area: location;
+    padding: 0vh 0vh 0vh 2.5vh;
+    /* background-color: rgb(245, 248, 34); */
+    background-color: blue;
+    display: grid; 
+	grid-column-gap: 10px;
+    row-gap: 6vh;
+    grid-template: 
+    "map" 63vh
+    "search" 10vh 
+    / 95%
+}
+
+#map {
+    grid-area: map;
+    background-color: blue;
+    margin-top: 3vh;
+    /* border-radius: 5px; */
+}
+
+#search{
+    grid-area: search;
+    background-color: white;
+    padding: 3vh 0vh 2vh 0vh;
+    display: flex;
+    margin-bottom: 0%;
+}
+
+#geocoder{
+    margin-left: 10vh;
+}
+
+#info{
+    background-color: blue;
+}
+
+#inputs{
+    grid-area: inputs;
+    background-color: pink;
+    padding: 3.5vh 0vh 0vh 2.5vh;
+	grid-column-gap: 10px;
+    row-gap: 2vh;
+    display: grid;
+    grid-template: 
+    "size" 15vh
+    "azimuth" 15vh 
+    "tilt" 15vh
+    "bill" 15vh
+    "submit" 5vh
+    / 95%
+}
+
+#size{
+    grid-area:size;
+    background-color: white;
+}
+
+#azimuth{
+    grid-area:azimuth;
+    background-color: white;
+}
+
+#tilt{
+    grid-area:tilt;
+    background-color: white;
+}
+
+#bill{
+    grid-area:bill;
+    background-color: white;
+}
+
+#submit{
+    grid-area:submit;
+    background-color: white;
+}

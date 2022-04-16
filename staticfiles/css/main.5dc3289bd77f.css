@@ -1,0 +1,19 @@
+body {
+	background-color: rgb(48, 48, 51);
+}
+
+#page {
+	height: 90vh;
+	width: 78vw;
+	margin: 5vh 5vh 5vh 25vh ;
+    border-radius: 1vh;
+    overflow: hidden;
+	background-color: white;
+	box-shadow: 10vh 15vh #888888;
+	display: grid; 
+	row-gap: 6.5vh;
+	box-shadow: rgba(0, 0, 0, 0.2) 0.5vh 3.2vh 3.2vh 1vh;
+	grid-template: 
+		"navbar page_content" 90vh
+		/ 20% 80%
+}

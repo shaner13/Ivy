@@ -1,0 +1,99 @@
+#page_content {
+    grid-area: page_content;
+    padding: 10vh 0vh 10vh 7vh;
+    background-color: white;
+    display: grid; 
+	grid-column-gap: 5vh;
+    row-gap: 5vh;
+    grid-template: 
+        "map inputs" 70vh 
+        / 45% 45%
+}
+
+#map {
+    grid-area: map;
+    height:100%; 
+    width:100%;
+    border-radius: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0.1vh 0.4vh 1.2vh 0.4vh;
+}
+
+#inputs {
+    grid-area: inputs;
+    background-color: rgba(10, 68, 15, 0.808);
+    border-style: solid;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0.1vh 0.4vh 1.2vh 0.4vh;
+    border-width: 0vh;
+    padding: 0.5vh 0vh 0vh 2.5vh;
+    border-radius: 2vh;
+	grid-column-gap: 10vh;
+    row-gap: 2vh;
+    display: grid;
+    grid-template: 
+    "location_box" 12vh
+    "size" 14vh
+    "azimuth" 14vh 
+    "tilt" 14vh
+    "submit" 5vh
+    / 95%
+}
+
+#location_box {
+    grid-area: location_box;
+    text-align: center;
+    background-color: white;
+    padding: 1.5vh 1vh 1vh 1vh;
+    border-radius: 0.5vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0.1vh 0.4vh 1.2vh 0.4vh;
+}
+
+#size {
+    grid-area:size;
+    background-color: white;
+}
+
+#azimuth {
+    grid-area:azimuth;
+    background-color: white;
+}
+
+#tilt {
+    grid-area:tilt;
+    background-color: white;
+}
+
+#submit {
+    grid-area:submit;
+    background-color: white;
+}
+
+.input_box {
+    text-align: center;
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0.1vh 0.4vh 1.2vh 0.4vh;
+}
+
+.input_box:hover, #map:hover, #location_box:hover, button[type=submit]:hover {
+    box-shadow: 0vh 0.3vh 1.2vh rgba(200, 124, 255, 0.747);
+}
+
+label, p, input {
+    font-size: 1.8vh;
+}
+
+p {
+    font-weight: bold;
+}
+
+#slider {
+    width: 50%;
+}
+
+button[type=submit] {
+    border-radius: 1vh;
+    border: 0;
+    font-family: Segoe UI;
+    background: white;
+    font-weight: bold;
+}

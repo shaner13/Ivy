@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+{% load static %}
+{{ co2_reduction|json_script:"co2_reduction" }}
+{{ car_offset|json_script:"car_offset" }}
+{{ tree_offset|json_script:"tree_offset" }}
+{{ sapling_offset|json_script:"sapling_offset" }}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/envimpact.css' %}">
+
+<section id="page_content"> 
+    <div id="envtext">On average you generate {{ KwH }} kW of clean energy per year which is equivalant to:</div>
+    <div id="f1" class="info_card">
+        <img src="{% static 'imgs/carbon2.png' %}" alt="carbon-image">
+        <p id="f1text" class="info_text"></p>
+    </div>
+
+    <div id="f2" class="info_card">
+        <img src="{% static 'imgs/car4.png' %}" alt="car-image">  
+        <p id="f2text" class="info_text"></p>
+    </div>
+
+    <div id="f3" class="info_card">
+        <img src="{% static 'imgs/tree.png' %}" alt="trees-image">
+        <p id="f3text" class="info_text"></p>
+    </div>
+
+</section>
+<script src="{% static 'js/envimpact.js' %}" type="text/javascript"></script>
+{% endblock %}

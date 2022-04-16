@@ -1,0 +1,73 @@
+#page_content {
+    grid-area: page_content;
+    padding: 7vh 0vh 10vh 4vh;
+    background-color: white;
+    display: grid; 
+	grid-column-gap: 2vh;
+    row-gap: 3vh;
+    grid-template: 
+        "envtext envtext envtext" 15vh
+        "f1 f2 f3" 50vh
+        / 31% 31% 31%
+}
+
+#envtext {
+    margin-top: 5vh;
+    padding-top: 3vh;
+    grid-area: envtext;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    font-size:2.7vh; 
+    height:50%; 
+    font-family: Helvetica;
+}
+
+#f1 {
+    grid-area: f1;
+    background-color: white;
+}
+
+#f2 {
+    grid-area: f2;
+    background-color: white;
+}
+
+#f3 {
+    grid-area: f3;
+    background-color: white;
+}
+
+.info_text {
+    background-color: rgba(10, 68, 15, 0.808);;
+    text-align: center;
+    width:70%;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 3vh;
+}
+
+.info_card {
+    padding-top:8vh;
+    padding-bottom:2vh;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.info_card img {
+    height:21vh; 
+    width: 21vh
+}
+
+.info_card:hover {
+    /* color: rgba(255, 255, 255, 1); */
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+p {
+    font-size: 1.8vh;
+}

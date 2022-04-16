@@ -1,0 +1,61 @@
+#page_content {
+    grid-area: page_content;
+    padding: 5vh 0vh 10vh 3vh;
+    background-color: white;
+    display: grid; 
+	grid-column-gap: 2vh;
+    row-gap: 5vh;
+    grid-template: 
+        "kwh kwh info" 38vh
+        "savings savings info" 38vh
+        / 36% 30% 28%
+}
+
+#kwh_chart {
+    border-radius: 1.5vh;
+    grid-area: kwh;
+    background-color: white;
+}
+
+#savings_chart {
+    grid-area: savings;
+    background-color: white;
+    border-radius: 1.5vh;
+}
+
+#info_table {
+    border-radius: 1.5vh;
+    padding: 3vh 0vh 0vh 2vh;
+    grid-area: info;
+    background-color: white;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+}
+
+.box {
+    box-shadow: rgba(0, 0, 0, 0.2) 0.1vh 0.2vh 1vh 0.2vh;
+}
+
+p {
+    font-size: 1.8vh;
+}
+
+#info_table img {
+    height:13vh; 
+    width: 13vh;
+}
+
+hr {
+    width:80%;
+}
+
+.info_text {
+    width: 95%; 
+    text-align: center;
+}
+
+.info_heading {
+    font-family: Segoe UI; 
+    font-size: 2.1vh;
+}

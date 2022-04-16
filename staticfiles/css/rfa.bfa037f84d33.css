@@ -1,0 +1,65 @@
+#page_content {
+    grid-area: page_content;
+    padding: 6vh 0vh 4vh 3vh;
+    background-color: white;
+    display: grid; 
+	grid-column-gap: 2vh;
+    row-gap: 2vh;
+    grid-template: 
+        "a1" 18vh
+        "a2" 18vh
+        "a3" 18vh
+        "a4" 18vh
+        /97%
+}
+
+#a1 {
+    grid-area: a1;
+    background-color: white;
+}
+
+#a2 {
+    grid-area: a2;
+    background-color: white;
+}
+
+#a3 {
+    grid-area: a3;
+    background-color: white;;
+}
+
+#a4 {
+    grid-area: a4;
+    background-color: white;
+}
+
+.assumption {
+    padding: 2vh 1vh 1vh 2vh;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: left;
+    display: flex;
+}
+
+.assumption:hover {
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.assumption > span {
+    margin-left: 1vh;
+    margin-top: 2vh;
+    color: black;
+    vertical-align: middle;
+    font-size: 2vh;
+}
+
+.assumption > img {
+    height:14vh; 
+    width: 14vh; 
+    vertical-align: middle;
+}
+
+.info-link {
+    text-decoration: none;
+}
+

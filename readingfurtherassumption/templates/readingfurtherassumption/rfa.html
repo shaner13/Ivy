@@ -1,0 +1,49 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/rfa.css' %}">
+
+<section id="page_content"> 
+
+    <div id="a1" class="assumption">
+        <img src="{% static 'imgs/earth.png' %}" alt="assumption1-image"> 
+        <span>
+        This calculator forecasts the output in kwh and savings in euros for solar panels in Ireland based on the location, where the kWh is converted to its value in euros
+        based on the predicted grid demand for that month, however the cost of electricity depends on other factors which are not accounted for such as economical factors 
+        or the time of day electricity is being consumed.
+        </span>
+    </div>
+
+    <div id="a2" class="assumption"> 
+        <img src="{% static 'imgs/solar4.png' %}" alt="assumption2-image"> 
+        <span>
+        As this calculator is for domestic solar panels it will forecast the output and savings based on a max installation of 6kWp 
+        as larger installations are generally for industrial purposes or farms thus retailers will offer different prices. The new 
+        Microgeneration Support Scheme is available for domestic installations up to 6kWp where excess supplied to the grid is renumerated 
+        at a competitive market rate. 
+        <a class="info-link" href="https://www.gov.ie/en/press-release/bfe21-homes-farms-businesses-and-communities-to-benefit-as-minister-ryan-announces-the-micro-generation-support-scheme/">Learn more about this scheme.</a>
+        </span>
+    </div>
+
+    <div id="a3" class="assumption"> 
+        <img src="{% static 'imgs/money.png' %}" alt="assumption3-image"> 
+        <span>
+        The initial cost of the solar panels includes the SEAI Grant which is available for €1900 for 1kWp with an 
+        additional €300 per kW up to €2400 for 4kWp.<a class="info-link" href="https://www.seai.ie/grants/home-energy-grants/solar-electricity-grant/"> Find out more about the SEAI grant here.</a>
+        </span>
+    </div>
+
+    <div id="a4" class="assumption"> 
+        <img src="{% static 'imgs/earth2.png' %}" alt="assumption4-image">   
+        <span>This calculator is only applicable for a solar PV system, wherein other technologies such as a battery or heating are not included, it also
+        does not account for solar thermal which can be used to heat water or air.  
+        The prices for the solar panels are based off 0.25kWp increments, where 1kWp costs €1900.
+        You can find a list of <a class="info-link" href="https://www.seai.ie/grants/home-energy-grants/solar-electricity-grant/solar-pv-installers-and-c/">
+        SEAI registered Solar PV companies here</a>.
+        </span>
+    </div>
+</section>
+{% endblock %}

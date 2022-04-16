@@ -1,0 +1,47 @@
+#navbar {
+    grid-area: navbar;
+    background-color: rgb(84, 7, 87);
+    row-gap: 50px;
+    display: grid;
+    grid-template: 
+    "logo" 10vh
+    "home" 5vh
+    "results" 5vh
+    "env_impact" 5vh
+    "roof_optimisation" 5vh
+    "assumptions_further_reading" 5vh
+}
+
+#logo{
+    grid-area:logo;
+    background-color: white;
+}
+
+#home{
+    grid-area:home;
+    background-color: white;
+}
+
+#results{
+    grid-area:results;
+    background-color: white;
+}
+
+#env_impact{
+    grid-area:env_impact;
+    background-color: white;
+}
+
+#roof_optimisation{
+    grid-area:roof_optimisation;
+    background-color: white;
+}
+
+#assumptions_further_reading{
+    grid-area:assumptions_further_reading;
+    background-color: white;
+}
+
+.active2 {
+    background-color: red !important;
+}

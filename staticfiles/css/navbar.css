@@ -1,0 +1,94 @@
+#navbar {
+    grid-area: navbar;
+    padding-top: 5vh;
+    background-image: linear-gradient(to bottom right, rgb(1, 12, 4), rgb(8, 56, 16));
+    row-gap: 5vh;
+    display: grid;
+    grid-template: 
+    "logo" 10vh
+    "spacing" 0vh
+    "home" 5vh
+    "results" 5vh
+    "env_impact" 5vh
+    "assumptions_further_reading" 7vh
+}
+
+#logo {
+    grid-area:logo;
+    text-align: center;
+}
+
+#spacing {
+    grid-area:spacing;
+}
+
+#home {
+    grid-area:home;
+    width: 33%;
+}
+
+#results {
+    grid-area:results;
+    width: 38%;
+}
+
+#env_impact {
+    grid-area:env_impact;
+    width: 80%;
+}
+
+#assumptions_further_reading {
+    grid-area:assumptions_further_reading;
+    width: 85%;
+}
+
+.active-item a, .active-item i {
+    color: white !important;
+}
+
+#logo-image {
+    height:7.5vh; 
+    width: 7.5vh; 
+    vertical-align:middle;
+}
+
+#logo-text {
+    font-size:5.5vh; 
+    font-family: Brush Script MT;
+}
+
+.menu-item {
+    text-align:left;
+    padding-top: 1vh;
+    border-radius: 1vh;
+    margin-left: 2vh;
+    padding-left: 1vh;
+}
+
+.menu-link {
+    color: rgb(88, 87, 87);
+    font-size: 2.2vh;
+    text-decoration: none;
+}
+
+i {
+    color: rgb(192, 185, 185);
+}
+
+.menu-item:hover  {
+    color: white;
+}
+
+.menu-item:hover a, .menu-item:hover i  {
+    color: white;
+}
+
+span {
+    color: white;
+    vertical-align: middle;
+}
+
+.menu-icon {
+    vertical-align:middle; 
+    font-size:2.8vh;
+}

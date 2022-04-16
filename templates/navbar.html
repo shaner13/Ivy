@@ -1,0 +1,31 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+
+
+<section id="navbar"> 
+    <div id="logo" style="padding-top: 2vh;">
+        <img src="{% static 'imgs/sun.png' %}" id="logo-image" alt="logo-image">
+        <span id="logo-text">ivy</span> 
+    </div>
+
+    <div id="home" class="{% if active == 'home' %}active-item{% endif %} menu-item"> 
+        <i class="material-icons-outlined menu-icon">house</i>
+        <a href="{% url 'home' %}" class="menu-link" style="vertical-align:middle;">Home</a>
+    </div>
+
+    <div id="results" class="{% if active == 'results' %}active-item{% endif %} menu-item"> 
+        <i class="material-icons-outlined menu-icon">savings</i>
+        <a href="{% url 'results' %}" class="menu-link">Results</a>
+    </div>
+
+    <div id="env_impact" class="{% if active == 'envimpact' %}active-item{% endif %} menu-item"> 
+        <i class="material-icons-outlined menu-icon">forest</i>
+        <a href="{% url 'envimpact' %}" class="menu-link" style="vertical-align:middle;">Environmental Impact</a> 
+    </div>
+
+    <div id="assumptions_further_reading" style="display:flex; align-items:center;" class="{% if active == 'rfa' %}active-item{% endif %} menu-item"> 
+        <i class="material-icons-outlined menu-icon">auto_stories</i>
+        <a href="{% url 'readingfurtherassumption' %}" class="menu-link" style="font-size:2.2vh;">&nbspAssumptions & Further &nbspReading</a>
+    </div>
+</section>
